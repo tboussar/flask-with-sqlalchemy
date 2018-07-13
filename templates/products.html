@@ -11,10 +11,10 @@
 
         {% for product in products %}
         <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+          <img class="card-img-top" src="http://pin.buzz/file/2015/09/Lego-Star-Wars-75055-Jeu-De-Construction-Imperial-Star-Destroyer-0-14.jpg" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">{{product.id}}</h5>
-            <p class="card-text">{{ product.name }}</p>
+            <h5 class="card-title">{{product.name}}</h5>
+            <p class="card-text">{{ product.description }}</p>
             <a href="#" class="btn btn-primary" OnClick="javascript:location.href='http://127.0.0.1:5000/api/v1/products/{{product.id}}'">Show</a>
           </div>
         </div>
